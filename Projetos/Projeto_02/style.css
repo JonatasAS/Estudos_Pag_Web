@@ -50,10 +50,17 @@ h1 span{
   font-weight: bold;
 }
 
-p{
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+section p{
   font-size: 14px;
   line-height: 28px;
   color: #7D7987;
+  margin: 40px 0;
 }
 
 button{
@@ -62,8 +69,10 @@ button{
 }
 
 footer{
-  width: 592px;
-  height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
 }
 
 footer a{
