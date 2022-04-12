@@ -1,10 +1,71 @@
 body{
   margin:0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .page{
-  border: solid red;
   width: 1000px;
   margin: 65px auto 0;
-  h
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #1F1534;
+  text-decoration: none;
+}
+
+/* pseudo-class */
+ul li a:hover{
+  font-weight: bold;
+}
+
+h1, ul{
+  font-family: 'Mulish', sans-serif;
+}
+
+h1{
+  font-size:49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: normal;
+  width: 489px;
+}
+
+h1 span{
+  color: #89C5CC;
+  font-weight: bold;
+}
+
+p{
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+}
+
+button{
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+  width: 592px;
+  height: 28px;
+}
+
+footer a{
+  font-weight: bold;
 }
