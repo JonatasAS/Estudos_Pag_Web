@@ -1,11 +1,14 @@
 body{
   margin:0;
   font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  min-height: 100vh;
 }
 
 .page{
   width: 1000px;
-  margin: 65px auto 0;
+  margin: 0 auto;
+  padding-top: 65px;
 }
 
 nav{
@@ -37,6 +40,12 @@ h1, ul{
   font-family: 'Mulish', sans-serif;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 h1{
   font-size:49px;
   line-height: 56px;
@@ -50,22 +59,55 @@ h1 span{
   font-weight: bold;
 }
 
-p{
+section p {
   font-size: 14px;
   line-height: 28px;
   color: #7D7987;
+
+  width: 440px;
+
+  margin: 40px 0;
 }
 
-button{
+.button {
+  color: white;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
+
+  background: #69B99D; 
+  border: 0;
+  padding: 14px 32px 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
 }
 
-footer{
-  width: 592px;
-  height: 28px;
+.button:hover {
+  background: #4ea788; 
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px; 
+
+  text-align: center;
+
+  margin-top: 80px;
 }
 
 footer a{
   font-weight: bold;
 }
+
+.balls{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
