@@ -59,6 +59,7 @@ h1 span{
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 section p {
   font-size: 14px;
   line-height: 28px;
@@ -70,10 +71,28 @@ section p {
 }
 
 .button {
+=======
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+section p{
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  margin: 40px 0;
+}
+
+button{
+  /* Texto */
+>>>>>>> ecf9c043f3223a829163c0ab415ffb231860d0f1
   color: white;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
 
+<<<<<<< HEAD
   background: #69B99D; 
   border: 0;
   padding: 14px 32px 15px;
@@ -98,6 +117,30 @@ footer {
 
   text-align: center;
 
+=======
+  /* Box model */
+  background: #69B99D;
+  border: none;
+  padding: 14px 35px 15px;
+
+  /* Propriedades do display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #489077;
+}
+
+footer{
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+>>>>>>> ecf9c043f3223a829163c0ab415ffb231860d0f1
   margin-top: 80px;
 }
 
