@@ -95,11 +95,7 @@ fieldset legend {
   flex-direction: column;
 }
 
-<<<<<<< Updated upstream
 .input-wapper label, .checkbox-wapper label {
-=======
-.input-wapper label, .checkbox-wapper label{
->>>>>>> Stashed changes
   font-size: 14px;
   line-height: 24px;
 
@@ -161,7 +157,6 @@ fieldset legend {
 .col-3 >div:nth-child(1){
   width: 100%;
 }
-<<<<<<< Updated upstream
 .checkbox-wapper{
   position: relative;
 }
@@ -171,18 +166,10 @@ fieldset legend {
   align-items: center;
   gap: 16px;
 
-=======
-
-.checkbox-wapper label{
-  display: flex;
-  align-items: center;
-  gap: 16px;
->>>>>>> Stashed changes
   margin: 0;
 }
 
 .checkbox-wapper input{
-<<<<<<< Updated upstream
   position: absolute;
   top: 0;
   left: 0;
@@ -192,12 +179,6 @@ fieldset legend {
   opacity: 0;
 }
 .checkbox-wapper label::before{
-=======
-  display: none;
-}
-
-.checkbox-wapper label:before{
->>>>>>> Stashed changes
   content: '';
   width: 24px;
   height: 24px;
@@ -207,7 +188,6 @@ fieldset legend {
   border-radius: 8px;
 }
 
-<<<<<<< Updated upstream
 .checkbox-wapper input:checked + label::before{
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat ;
@@ -217,8 +197,3 @@ fieldset legend {
 .checkbox-wapper input:focus + label::before{
   outline: 2px solid black;
 }
-=======
-.checkbox-wapper input:checked + label:before{
- background: red; 
-}
->>>>>>> Stashed changes
