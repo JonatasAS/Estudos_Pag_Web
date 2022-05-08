@@ -31,6 +31,8 @@ header {
   font-family: var(--ff-heading);
 
   text-align: center;
+
+  animation: topdown 700ms;
 }
 
 main{
@@ -38,6 +40,8 @@ main{
   gap: 3.2rem;
 
   padding-bottom: 10rem;
+
+  animation: left_right 700ms 350ms backwards;
 }
 
 header p {
@@ -107,4 +111,48 @@ img {
   height: 3.8rem;
   display: inline-flex;
   align-items: center;
+}
+
+header{
+  animation: topdown 700ms;
+}
+
+main{
+  animation: left_right 700ms 350ms backwards;
+}
+
+main >div :first-child:hover{
+  animation: left_right 900ms 350ms backwards;
+}
+
+main >div :first-child(2):hover{
+  animation: left_right 900ms 350ms backwards;
+}
+
+main >div :first-child(3):hover{
+  animation: left_right 900ms 350ms backwards;
+}
+
+@keyframes topdown{
+  0%{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes left_right{
+  0%{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
 }
