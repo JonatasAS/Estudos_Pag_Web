@@ -12,6 +12,10 @@ body {
   font-family: 'Staatliches', cursive;
 }
 
+input, label, span{
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
 
   background: #EFEFEF;
@@ -27,7 +31,6 @@ body::before {
   left: 0;
   z-index: -1;
   background: hsla(228, 15%, 38%, 1);
-  mix-blend-mode: normal;
 }
 
 .page {
@@ -67,7 +70,7 @@ form {
 
   display: flex;
   flex-direction: column;
-  gap: 48px;
+ 
 }
 
 fieldset {
@@ -77,7 +80,7 @@ fieldset {
 .fieldset-wapper {
   display: flex;
   flex-direction: column;
-
+  gap: 48px
 }
 
 fieldset legend {
@@ -86,7 +89,7 @@ fieldset legend {
   line-height: 3.4rem;
   color: hsla(228, 15%, 38%, 1);
   border-bottom: 1px solid #E6E6F0;
-  margin-bottom: 8.4rem;
+ /*  margin-bottom: 8.4rem; */
 }
 
 .input-wapper {
@@ -95,11 +98,23 @@ fieldset legend {
 }
 
 .input-wapper label {
-  font-family: 'Poppins';
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: hsla(258, 9%, 32%, 1);
-  margin-bottom: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.input-wapper label span {
+  margin-left: 1.2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.0rem;
+
+  color: hsla(258, 14%, 77%, 1);
+}
+
+.input-wapper span:hover {
+  color: hsl(228deg 15% 38%);
 }
 
 .input-wapper input {
@@ -108,7 +123,7 @@ fieldset legend {
   border: 1px solid hsla(240, 24%, 92%, 1);
   border-radius: 8px;
 
-  width: 30.0rem;
+
   height: 5.6rem;
 
   padding: 0 2.4rem;
@@ -116,5 +131,17 @@ fieldset legend {
   font-size: 1.6rem;
   line-height: 2.6rem;
 
+
   color: hsla(228, 15%, 38%, 1);
 }
+
+.col-2 {
+  display: flex;
+  gap: 2.8rem;
+
+}
+
+.col-2 input {
+  width: 30.0rem;
+}
+
