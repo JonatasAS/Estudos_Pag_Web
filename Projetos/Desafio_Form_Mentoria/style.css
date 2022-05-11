@@ -12,7 +12,9 @@ body {
   font-family: 'Staatliches', cursive;
 }
 
-input, label, span{
+input,
+label,
+span {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -34,7 +36,7 @@ body::before {
 }
 
 .page {
-  width: 73.6rem;
+  width: 75.0rem;
   margin: 0 auto;
 }
 
@@ -70,7 +72,7 @@ form {
 
   display: flex;
   flex-direction: column;
- 
+
 }
 
 fieldset {
@@ -80,7 +82,7 @@ fieldset {
 .fieldset-wapper {
   display: flex;
   flex-direction: column;
-  gap: 48px
+  gap: 4.8rem
 }
 
 fieldset legend {
@@ -89,7 +91,7 @@ fieldset legend {
   line-height: 3.4rem;
   color: hsla(228, 15%, 38%, 1);
   border-bottom: 1px solid #E6E6F0;
- /*  margin-bottom: 8.4rem; */
+  /*  margin-bottom: 8.4rem; */
 }
 
 .input-wapper {
@@ -145,3 +147,71 @@ fieldset legend {
   width: 30.0rem;
 }
 
+#my-form>fieldset:nth-child(2) {
+  margin-top: 3.0rem;
+}
+
+#my-form>fieldset:nth-child(3) {
+  margin-top: 3.2rem;
+}
+
+.col-3,
+.col-4 {
+  display: flex;
+  align-items: center;
+}
+
+.col-3>div:nth-child(1) {
+  width: 100%;
+  margin-right: 3.2rem;
+}
+
+.col-3>div:nth-child(2) {
+  margin-right: 1.0rem;
+}
+
+.col-4>div:nth-child(1) {
+  width: 100%;
+  margin-right: 3.2rem;
+}
+
+.col-4>div:nth-child(2) {
+  margin-right: 1.0rem;
+}
+
+footer {
+  background: hsla(228, 15%, 38%, 1);
+
+  height: 16.0rem;
+  display: flex;
+  flex-direction: column;
+
+  padding: 5.3rem 7.1rem;
+
+  margin-bottom: 36.6rem;
+
+ 
+  border-radius: 0 0 20px 20px;
+}
+
+footer .button {
+  height: 5.6rem;
+  background: hsla(348, 100%, 66%, 1);
+  border-radius: 2.0rem;
+  border: 0;
+
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+
+  color: hsla(0, 0%, 100%, 1);
+}
+
+footer .button:hover{
+  background:hsla(350, 100%, 60%, 1); 
+}
+
+input:invalid:hover{
+  border: 1px solid hsla(350, 100%, 60%, 1);
+}
