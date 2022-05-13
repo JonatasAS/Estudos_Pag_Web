@@ -83,6 +83,9 @@ main p {
 .card {
   position: relative;
   font-family: var(--ff-heading);
+  animation-name: downtop;
+  animation-duration: 700ms;
+  animation-direction: reverse;
 }
 
 .card img {
@@ -122,3 +125,14 @@ main p {
   background: hsla(312, 91%, 96%, 1);
 }
 
+@keyframes downtop{
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
