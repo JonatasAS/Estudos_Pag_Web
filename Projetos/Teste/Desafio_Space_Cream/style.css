@@ -7,7 +7,7 @@
 :root {
   --ff-heading: 'Staatliches', cursive;
   --ff-texting: 'Roboto', sans-serif;
-  
+
 
   font-size: 62.5%;
   --fs-body: 1.6rem;
@@ -20,7 +20,6 @@ body {
 .page {
   display: flex;
   width: 128rem;
-  height: 72rem;
 }
 
 header {
@@ -63,7 +62,7 @@ header p {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 0 4.8rem 11.3rem ;
+  margin: 0 4.8rem 11.3rem;
 
   color: hsla(0, 0%, 100%, 1);
 
@@ -73,12 +72,15 @@ main {
   display: grid;
   gap: 3.2rem;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 9.8rem;
+  align-items: center;
+  
 }
 
 .card img {
   width: 22rem;
   object-fit: cover;
-  padding: 0 ;
+  padding: 0;
 }
 
 img {
@@ -88,4 +90,17 @@ img {
 a {
   color: #1F1534;
   text-decoration: none;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+
+  
+  text-align: center;
+
+  color: #4A4E69;
+  
 }
