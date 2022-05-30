@@ -13,5 +13,5 @@ const restDiv = firstNumber % secondNumber
 alert("Soma " + sum)
 alert("Subtração " + sub)
 alert("Multiplicação " + mult )
-alert("Divisão " + div)
-alert("Resto da divisão " = restDiv)
+alert("Divisão " + div.toFixed(1))
+alert("Resto da divisão " + restDiv)
