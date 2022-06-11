@@ -31,4 +31,5 @@ function countdown() {
     }, 1000)
 }
 
-console.log('timer')
+// named export
+export {resetTime, countdown}

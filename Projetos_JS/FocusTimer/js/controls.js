@@ -6,4 +6,5 @@ function resetControls() {
   
   }
 
+  // default export
   export default resetControls
