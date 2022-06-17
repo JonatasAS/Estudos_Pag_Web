@@ -9,3 +9,12 @@ import {
   buttonRain,
   buttonStop
 }from "./elements.js"
+import Timer from "./timer.js";
+
+const timer = Timer({
+  minutesDisplay,
+  secondsDisplay
+
+})
+
+Event({timer, sound})
