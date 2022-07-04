@@ -1,6 +1,6 @@
 export class GithubUser {
   static search(username) {
-    const endpoint = `htpps://api.github.com/users/${username}`
+    const endpoint = `https://api.github.com/users/${username}`
 
     return fetch(endpoint)
     .then(data => data.json())
@@ -24,8 +24,10 @@ export class Favorites {
 
   load(){
     this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+  }
 
-    console.log(this.entries)
+  async add(username){
+    const user = await GithubUser.search(username)
   }
 
   delete(user) {
@@ -47,6 +49,16 @@ export class FavoritesView extends Favorites {
     ('table tbody')
 
     this.update()
+    this.onadd()
+  }
+
+  onadd() {
+    const addButton = this.root.querySelector('.search button')
+    addButton.onclick = () => {
+      const { value } = this.root.querySelector('.search input')
+
+      this.add(value)
+    }
   }
 
 
