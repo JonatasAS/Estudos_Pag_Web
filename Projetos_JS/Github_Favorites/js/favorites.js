@@ -53,7 +53,6 @@ export class Favorites {
 }
 
 // classe que vai criar a visualização e eventos do html
-
 export class FavoritesView extends Favorites {
   constructor(root) {
     super(root)
@@ -126,7 +125,6 @@ export class FavoritesView extends Favorites {
   }
 
   removeAllTr() {
-
     this.tbody.querySelectorAll('tr').forEach((tr) => {
       tr.remove()
     })
