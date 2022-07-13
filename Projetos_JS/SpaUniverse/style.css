@@ -7,6 +7,8 @@
 :root {
   --font-main: 'Roboto', sans-serif;
   --font-color: #ffffff;
+  --font-color-text: #E1E1E6;
+
 
   font-size: 62.5%;
   --font-body: 1.6rem;
@@ -23,21 +25,76 @@ nav {
   gap: 3.2rem;
   width: 48.9rem;
   height: 4.2rem;
-  margin-top: 4rem;
+  padding-top: 4rem;
   margin-left: 7.2rem;
 }
 
 a {
-  color: var();
+  color: var(--font-color);
   text-decoration: none;
   font-weight: 700;
 }
+#home {
+  text-align: center;
+  margin-top: 29.4rem;
+}
 
-/* .fundo {
+h1 {
+  font-weight: 700px;
+  font-size: 4.8rem;
+  color: var(--font-color-text);
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.4rem;
+  padding: 12px 32px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--font-color);
+}
+
+.context{
+  width: 64rem;
+  height: 20rem;
+  padding-top: 18.5rem;
+  margin-left: 14.2rem;
+}
+
+#fundo1 {
   width: 100vw;
   height: 100vh;
   background: url('image/fundo1.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
- */
+
+
+#fundo2 {
+  width: 100vw;
+  height: 100vh;
+  background: url('image/fundo2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#fundo3 {
+  width: 100vw;
+  height: 100vh;
+  background: url('image/fundo3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--font-color-text);
+  margin-top: 1.6rem;
+}
+
