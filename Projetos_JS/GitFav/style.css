@@ -59,6 +59,7 @@ header {
   border-radius: .4rem;
   padding: 0 .8rem;
 
+  color:#ffffff;
   background-color:  #06181C;
 }
 
@@ -86,5 +87,14 @@ header {
 .search button:hover {
   background-color: #ffffff;
   color: #065E7C;
-
 }
+
+button img:hover {
+  filter: brightness(0.4) sepia(1) saturate(6) hue-rotate(186deg); 
+}
+
+
+
+
+
+
