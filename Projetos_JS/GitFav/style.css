@@ -9,6 +9,7 @@
 
   --ff-primary: 'Roboto', sans-serif;
   --bk-color: #000000;
+  --primary-color: #E1E1E6;
 }
 
 body {
@@ -87,13 +88,49 @@ header {
 .search button:hover {
   background-color: #ffffff;
   color: #065E7C;
+  filter: brightness(1.1);
 }
 
 button img:hover {
   filter: brightness(0.4) sepia(1) saturate(6) hue-rotate(186deg); 
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
 
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+table th {
+  background: #092D38;
+  text-align: center;
+  font-weight: normal;
+  padding: 1.6rem 4rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+table tr:last-child(even) {
+  background: #06161B;
+}
+
+table tr:nth-child(odd) {
+  background: #4A808C;
+}
 
 
 
