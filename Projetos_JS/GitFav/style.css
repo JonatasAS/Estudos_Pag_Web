@@ -89,7 +89,9 @@ header {
   background-color: #ffffff;
   color: #065E7C;
   filter: brightness(1.1);
+
 }
+
 
 button img:hover {
   filter: brightness(0.4) sepia(1) saturate(6) hue-rotate(186deg); 
@@ -116,20 +118,54 @@ table th {
 
 table th:first-child {
   border-top-left-radius: 1.2rem;
-  border-bottom-left-radius: 1.2rem;
+  
 }
 
 table th:last-child {
   border-top-right-radius: 1.2rem;
-  border-bottom-right-radius: 1.2rem;
+  
 }
 
 table tr:last-child(even) {
-  background: #06161B;
+  background: #4A808C;
 }
 
 table tr:nth-child(odd) {
   background: #4A808C;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: #F75A68;
+  cursor: pointer;
 }
 
 
