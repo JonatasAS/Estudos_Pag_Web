@@ -107,7 +107,6 @@ button img:hover {
 .table-wrapper::-webkit-scrollbar {
   width: .6rem;               /* width of the entire scrollbar */
   border-radius: 1rem;
-  height: .2rem;
 }
 
 .table-wrapper::-webkit-scrollbar-track {
